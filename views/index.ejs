@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riot ID Search</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Riot ID Search</h1>
+    <form id="searchForm" class="searchForm">
+      <div>
+        <label for="gameName">Username:</label>
+        <input type="text" id="gameName" name="gameName" required>
+      </div>
+      <div>
+        <label for="tagLine">Tag:</label>
+        <input type="text" id="tagLine" name="tagLine" class="tag-input" required maxlength="5">
+      </div>
+      <button type=" submit" class="submit-button">Search</button>
+    </form>
+    <div id="result">
+      <h2>Summoner Information:</h2>
+      <p id="summonerName">Summoner Name:</p>
+      <p id="summonerLevel">Summoner Level:</p>
+      <h2>Champion Mastery:</h2>
+      <ul id="championMastery">
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <script type="module" src="/index.js"></script>
+
+  <script>
+    // Set default values to my account
+    document.getElementById('gameName').value = 'SeanInSpace';
+    document.getElementById('tagLine').value = 'NA1';
+  </script>
+</body>
+
+</html>
